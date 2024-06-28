@@ -1,0 +1,173 @@
+@import url(typography.css);
+
+body {
+    padding: 0;
+    margin: 0;
+
+    font-family: Lack;
+    font-weight: 400;
+    font-size: 25px;
+    line-height: 25px;
+    color: #000;
+
+    @media (orientation: landscape) {
+        font-size: 25px;
+    }
+
+    @media (orientation: portrait) {
+        font-size: 2vw;
+    }
+}
+
+#wrapper {
+    width: 100vw;
+    height: 100vh;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+#content {
+    max-width: 1440px;
+    width: 100%;
+
+    flex-grow: 1;
+
+    display: flex;
+    flex-direction: row;
+
+    gap: 25px;
+    padding: 25px;
+    box-sizing: border-box;
+
+    flex-wrap: wrap;
+
+    overflow: scroll;
+}
+
+/* Hide scrollbar  */
+#content::-webkit-scrollbar {
+    display: none; /* Chrome, Safari and Opera */
+}
+
+#content {
+    -ms-overflow-style: none;  /* IE and Edge */
+    scrollbar-width: none;  /* Firefox */
+}
+/* End of hiding scrollbar */
+
+.row {
+    display: flex;
+    flex-direction: column;
+
+    gap: 25px;
+
+    min-width: 300px;
+}
+
+.column {
+    display: flex;
+    flex-direction: row;
+
+    gap: 25px;
+}
+
+#left-bar {
+    flex-grow: 1.25;
+    height: 100%;
+}
+
+#center-bar {
+    flex-grow: 2.15;
+    height: 100%;
+}
+
+#right-bar {
+    flex-grow: 1;
+    height: 100%;
+}
+
+#center-bar-top {
+    flex-grow: 1;
+}
+
+#center-bar-bottom {
+    flex-grow: 1.65;
+}
+
+#right-bar-top {
+    flex-grow: 1;
+}
+
+#right-bar-bottom {
+    flex-grow: 1.05;
+}
+
+.space-block {
+    width: 100%;
+    height: 100%;
+
+    background-origin: border-box;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+
+    background-color: black;
+}
+
+.block-hue {
+    width: 100%;
+    height: 100%;
+
+    /* background-color: #fff;
+    mix-blend-mode: hue; */
+}
+
+.block-lighter {
+    width: 100%;
+    height: 100%;
+
+    /* background-color: rgba(255, 255, 255, 0.25); */
+}
+
+#space-1 {
+    background-image: url(../assets/space-1.svg);
+}
+
+#space-2 {
+    background-image: url(../assets/space-2.svg);
+}
+
+#space-3 {
+    background-image: url(../assets/space-3.svg);
+}
+
+#space-4 {
+    background-image: url(../assets/space-4.svg);
+}
+
+#space-5 {
+    background-image: url(../assets/space-5.svg);
+}
+
+#space-6 {
+    background-image: url(../assets/space-6.svg);
+}
+
+#footer {
+    width: 100%;
+
+    display: flex;
+    flex-direction: row;
+
+    align-items: center;
+    justify-content: space-between;
+
+    text-transform: lowercase;
+
+    box-sizing: border-box;
+    padding: 5px 20px;
+
+    border-top: 1px solid #000;
+}
